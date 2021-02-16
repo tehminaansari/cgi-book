@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cgi Book Module
+ *
+ * @category   Cgi
+ * @package    Cgi_Book
+ * @version    1.0.0
+ * @description Add new product type
+ *
+ * Release with version 1.0.0
+ *
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog:etc/product_types.xsd">
+    <type name="book_type" label="books" modelInstance="Cgi\Book\Model\Product\Type\BookType" indexPriority="60" sortOrder="80" isQty="true">
+        <priceModel instance="Cgi\Book\Model\Product\Price" />
+    </type>
+</config>

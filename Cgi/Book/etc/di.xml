@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cgi Book Module
+ *
+ * @category   Cgi
+ * @package    Cgi_Book
+ * @version    1.0.0
+ * @description map isbn attribute in quote item
+ *
+ * Release with version 1.0.0
+ *
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- override cart/item/default.phtml file -->
+    <type name="Magento\Checkout\Block\Cart\AbstractCart">
+        <plugin name="item-custom" type="Cgi\Book\Plugin\Cart\AbstractCart" sortOrder="1"/>
+    </type>
+    <type name="Magento\Framework\App\Action\AbstractAction">
+    	<plugin name="customer-session-data-to-context" type="Cgi\Book\Plugin\CustomerSessionContext" sortOrder="15"/>
+    </type>
+</config>

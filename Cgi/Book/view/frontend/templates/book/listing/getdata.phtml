@@ -1,0 +1,26 @@
+<?php
+/**
+ * Cgi Book Module
+ *
+ * @category   Cgi
+ * @package    Cgi_Book
+ * @version    1.0.0
+ * @description show books
+ *
+ * Release with version 1.0.0
+ *
+ *
+ */
+// @codingStandardsIgnoreFile
+$record = $this->getRow();
+?>
+<table id="prow-<?php /* @escapeNotVerified */ echo $record->getItemId(); ?>" class="row premium-row">
+    <tr>
+        <td data-th="Name" class="">
+            <?php /* @escapeNotVerified */ echo $record->getName(); ?>
+        </td>
+        <td data-th="ISBN" class="">
+            <?php /* @escapeNotVerified */ echo $record->getIsbn(); ?>
+        </td>
+    </tr>
+</table>

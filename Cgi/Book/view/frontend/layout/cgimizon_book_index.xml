@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cgi Book Module
+ *
+ * @category   Cgi
+ * @package    Cgi_Book
+ * @version    1.0.0
+ * @description layout of cgi book page
+ *
+ * Release with version 1.0.0
+ *
+ *
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Cgimizon Books List</title>
+        <css src="Cgi_Book::css/book.css"/>
+        <css src="Cgi_Book::css/jquery.dataTables.min.css"/>
+    </head>
+    <body>
+        <referenceBlock name="page.main.title">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Cgi_Book::book/title.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="Cgi\Book\Block\Book\Index" name="bookblock"  template="Cgi_Book::book/index.phtml" />        
+        </referenceContainer>
+    </body>
+</page>

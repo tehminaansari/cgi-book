@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cgi Book Module
+ *
+ * @category   Cgi
+ * @package    Cgi_Book
+ * @version    1.0.0
+ * @description show customer name in header
+ *
+ * Release with version 1.0.0
+ *
+ *
+ */
+-->
+<page xmlns:xsi="//www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="header.links">
+            <block class="Cgi\Book\Block\GetCustomer" name="GetCustomer" ></block>
+        </referenceBlock>
+    </body>
+</page>

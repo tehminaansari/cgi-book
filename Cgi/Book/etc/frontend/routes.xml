@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cgi Book Module
+ *
+ * @category   Cgi
+ * @package    Cgi_Book
+ * @version    1.0.0
+ * @description create a route
+ *
+ * Release with version 1.0.0
+ *
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="cgimizon" frontName="cgimizon">
+            <module name="Cgi_Book" />
+        </route>
+    </router>
+</config>
